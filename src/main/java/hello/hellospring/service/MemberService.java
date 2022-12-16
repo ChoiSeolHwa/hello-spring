@@ -9,12 +9,12 @@ import java.util.List;
 import java.util.Optional;
 
 //Spring이 올라오때 service를 스프링이 컨테이너에 MemberService를 등록해
-@Service
+
 public class MemberService {
 
     private final MemberRepository memberRepository;
 
-    @Autowired
+
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }

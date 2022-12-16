@@ -15,6 +15,8 @@ repositories {
 dependencies { // build 툴들은 요새 다 의존관계
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web' //starter-web와 의존관계에 있는 gradle 다 땡겨옴 그래서 라이브러리에 한가득
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	runtimeOnly 'com.h2database:h2'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
